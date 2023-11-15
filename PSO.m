@@ -72,8 +72,11 @@ while ((norm(F_Gb) > E_TOL) && (iter < I_MAX))
 end
 
 [~,solution] = f_eval(Gb,Ftargets,objFunc);
-disp("Solution:");
+disp("Iterations:");
+disp(iter);
+disp("X-Points:");
 disp(Gb);
+disp("Associated Output");
 disp(solution);
 
 figure();
